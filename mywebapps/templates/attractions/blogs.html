@@ -1,0 +1,84 @@
+<!--inherit html common code-->
+
+{% extends 'common_code/base.html'%}
+
+{%load static%}
+
+ <!--inherit start block content-->
+<!--page title-->
+{% block title %}  
+Blogs
+{% endblock title %}
+
+{%block content1%} 
+<!--headline of Attractions-->
+<h2 class="my-5 text-center">Our Blogs</h2>
+  <!--start card-->
+  <!--start grid-->
+  
+<div class="container text-center">
+
+    <div class="row">
+  
+      <!--start card-->
+  
+      <div class="col-4"><div class="card" style="width: 20rem;">
+        <img id = 'bgimg1' src="{% static 'images/b1-img-01.jpg'%}"  alt="...">
+        <div class="card-body">
+          <h5 class="card-title">North America</h5>
+          <p class="readmore-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          <a href="{% url 'flights' %}" class="readmore-button">read more</a>
+        </div>
+      </div>
+    </div>
+  
+       <!--end card-->
+  
+      <div class="col-4"><div class="card" style="width: 20rem;">
+        <img id = 'bgimg2' src="{% static 'images/b1-img-02.jpg'%}"  alt="...">
+        <div class="card-body">
+          <h5 class="card-title">South America</h5>
+          <p class="readmore-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          <a href="{% url 'flights' %}" class="readmore-button">read more</a>
+        </div>
+      </div>
+    </div>
+    <!--end card-->
+    
+      <div class="col-4"><div class="card" style="width: 20rem;">
+        <img id = 'bgimg3' src="{% static 'images/b1-img-03.jpg'%}"  alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Asia</h5>
+          <p class="readmore-text">Some quick example text to build on the card title and make up the bulk of the card's content. 
+            Some quick example text to build on the card title and make up the bulk of the card's content.
+            Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          <a href="{% url 'flights' %}" class="readmore-button">read more</a>
+        </div>
+      </div>
+    </div>
+    <!--end card-->
+    </div>
+  </div>
+  <!--end grid-->
+ 
+
+
+  <!--end card-->
+
+
+
+
+<!--start spacing-->
+<div class ="margin-bottom">
+  
+</div>
+<!--end spacing-->
+
+
+{%endblock content1%}
+
+
+
+
+
+ <!--end block content-->

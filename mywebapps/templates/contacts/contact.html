@@ -1,0 +1,215 @@
+
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <title>Contacts</title>
+</head>
+<body>
+    <!--Start Heading Tag-->
+    <h1> h1, Maximum Heading Tag Size. 6 types of Heading Tags </h1>
+    <h2> h2 heading tag </h2>
+    <h3> h3 heading tag </h3>
+    <h4> h4 heading tag </h4>
+    <h5> h5 heading tag </h5>
+    <h6> h6, Minimum Heading Tag Size. 6 types of Heading Tags </h6>
+     <!--End Heading Tag-->
+
+    <!--Start Paragraph Tag-->
+    <p> <mark>Lorem Ipsum</mark> is <small>simply dummy text of the</small> printing and typesetting <strong>industry</strong>. Lorem Ipsum has been the industry's standard <b>dummy text</b> ever since the 1500s </p>
+
+    <p> Previous Price <del> 9867240 </del> Offered Price <ins> 9870000 </ins> </p>
+
+    <p> <abbr title='https://www.w3schools.com/html/'>html-learning</abbr> </p>
+
+    <p> (a+b)2 </p>
+
+    <p> sup tag: (a+b)<sup>2</sup> </p>
+
+    <p> sub tag: CH<sub>2</sub> </p>
+
+
+    <!--End Paragraph Tag-->
+
+    <!--start pre-tag-->
+
+    <p> name
+        details
+            
+            connect
+  
+  </p>
+
+    <pre> name
+          details
+              
+              connect
+    
+    </pre>
+
+    <!--end pre-tag-->
+
+    <!--start span tag-->
+
+    <p> welcome to <span style = "color: blue;">Tour Guide </span></p>
+
+    <!--end span tag-->
+
+    <!--start href tag-->
+
+    <h2>a: anchor tag and href: href tag </h2>
+    
+    <a href = "https://docs.djangoproject.com/en/4.2/">Django Documentation</a>
+    
+    <!--end href tag-->
+
+    <!--start ordered list tag-->
+    <ol>
+        <li>email</li>
+        <li>skype</li>
+        <li>phone</li>
+    </ol>
+
+    <ol type = 'i'>
+        <li>email</li>
+        <li>skype</li>
+        <li>phone</li>
+    </ol>
+
+    <ol start = '40'>
+        <li>email</li>
+        <li>skype</li>
+        <li>phone</li>
+    </ol>
+
+
+    <!--end ordered list tag-->
+
+    <!--start unordered list tag-->
+    <ul> 
+        <li>email</li>
+        <li>skype</li>
+        <li>whatsApp</li>
+        <li>phone</li>
+    </ul>
+
+    <ul style = "list-style-type:square ;"> 
+        <li>email</li>
+        <li>skype</li>
+        <li>whatsApp</li>
+        <li>phone</li>
+    </ul>
+
+    <ul style = "list-style-type:None;"> 
+        <li>email</li>
+        <li>skype</li>
+        <li>whatsApp</li>
+        <li>phone</li>
+    </ul>
+
+    <!--end unordered list tag-->
+
+    <!--start form tag-->
+    <form action="">
+        <label for="">Type First Name:</label>
+        <input type="text", placeholder="Enter Your First Name"> <br><br>
+        <label for="">Type Email:</label>
+        <input type = "email" name="" id="", placeholder="Enter your email address"><br><br>
+        <label for="">Type Password:</label>
+        <input type="password" name="" id="", placeholder="Enter your password"><br><br>
+
+        <!--start radio-->
+        <input type="radio" name="gender" id="">Male<br>
+        <input type="radio" name="gender" id="">Female<br>
+        <input type="radio" name="gender" id="">Others<br><br>
+        <!--end radio-->
+
+        <!--start checkbox(multiple choice)-->
+        <label for="">checkbox(Choose Multiple):</label>
+        <input type="checkbox" name="" id="">North America
+        <input type="checkbox" name="" id="">West Europe
+        <input type="checkbox" name="" id="">Asia<br><br>
+        <!--end checkbox-->
+
+        <!--start input file-->
+        <label for="">Upload File:</label>
+        <input type="file" name="" id=""><br><br>
+        <input type="submit" value="SUBMIT">
+        <input type="reset" value="RESET">
+        <input type="number" name="" id="">
+        <input type="date" name="" id="">
+        <!--end input file-->
+    
+    </form>    
+    <br><br>
+    <!--end form tag-->
+
+    <!--start table-->
+    <table width="700" border="2px" align="center" cellspacing = 10 colspacing="10">
+        <tr>
+            <th>Customer's ID</th>
+            <th>Customer's Name</th>
+            <th>Customer's Location</th>
+            <th>Destination</th>
+            <th>Airline</th>
+        </tr>
+        <tr> 
+            <td>00001</td>
+            <td>Jeson Bolder</td>
+            <td>USA</td>
+            <td>West Europe</td>
+            <td>Emirates</td>
+        </tr>
+        <tr> 
+            <td>00002</td>
+            <td>Melica Alter</td>
+            <td>UK</td>
+            <td>Asia</td>
+            <td>AirAsia</td><br><br>
+        </tr>
+    </table>
+    <!--end table-->   
+
+    <!--start div tag-->
+    <div> 
+        <h3>div tag</h3>
+        <p> most of the tag can perform inside the <b>div</b>. 
+            Special we use div to separte the sections like 
+            <b>navbar, footer, body</b> in a webpage.</p>
+    </div><br><br>
+    <!--end div tag-->
+
+    <!--start div tag-->
+     <!--class tag -->
+    <div class="cselector">
+        Class selector dot(.) Sign
+        <p> welcome to class</p>
+        <p id="idtag">this is id tag</p>
+
+    </div>
+    <!--end div tag-->
+    <!--id tag -->
+    <p id="idtag"> for id selector, we use hash(#) and this is id tag</p>
+    
+    <!--text property class-->
+    <p class="tproperty">This is a module for learning text property and how its work and we are always curious about that. It will enhance our learning of html and css.
+        This is a module for learning text property and how its work and we are always curious about that. It will enhance our learning of html and css.
+        This is a module for learning text property and 
+        how its work and we are always curious about that. It will enhance our learning of html and css.
+    </p>
+    <!--start div-->
+    <div class = "margin">
+        <div class="padding">
+            <p>Margin and Padding</p>
+        
+        </div>
+
+    </div>
+    <!--image tag-->
+    <img src="{% static 'images/1.jpg'%}" alt="">
+</body>
+</html>

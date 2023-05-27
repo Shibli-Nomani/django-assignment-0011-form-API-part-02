@@ -1,0 +1,53 @@
+<!--inherit html common code-->
+
+{% extends 'common_code/base.html'%}
+
+{%load static%}
+ <!--inherit start block content-->
+<!--page title-->
+{% block title %}  
+Attractions
+{% endblock title %}
+
+{%block content1%} 
+
+<blockquote class="blockquote text-right">
+    <p class="mb-0">    
+
+        <h4>variable</h4>
+
+        <h4> Our recommanded destination [{{l1}}] for adventure travellers. </h4>
+
+        <h4> Our recommanded destination [{{l2}}]for history lovers. </h4>
+
+        <h4> Our recommanded destination [{{l3}}] for city lovers. </h4>
+
+        <h4>Use Filter</h4>
+
+        <h4> Our recommanded destination [{{l1 | upper}}] for adventure travellers. </h4>
+
+        <h4> Our recommanded destination [{{l2 | lower}}] for history lovers. </h4>
+
+        <h4> Our recommanded destination [{{l3 | title}}] for city lovers. </h4></p>
+  </blockquote>
+
+
+
+<!--start spacing-->
+<div class ="margin-bottom">
+  
+</div>
+<!--end spacing-->
+
+
+{%endblock content1%}
+
+
+
+
+
+ <!--end block content-->
+
+
+
+

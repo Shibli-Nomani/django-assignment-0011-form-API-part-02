@@ -1,0 +1,80 @@
+/*to remove bydefault margin, padding, border box; for uinversal we call star(*)*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*background color*/
+body{
+    background-color: orange;
+}
+
+/*paragraph color*/
+p{
+    color: brown;
+}
+
+/* star(*) works as universal selector(apply on all text)*/
+
+*{
+    color: crimson;
+}
+
+/*change over class under a div and starts with dot sign*/
+.cselector{
+    font-size: 30px;
+    font-weight: 900;
+    color: green;
+}
+/*change over id use hash sign #*/
+#idtag{
+    color: whitesmoke;
+}
+
+/*Group Selector*/
+
+h1,h2, h5 {
+    font-size: x-large;
+    font-style: italic;
+    color: rgb(188, 136, 57);
+}
+
+/*text property class*/
+
+.tproperty{
+    text-align: justify; /*text line same positioning*/
+    text-align: center; /*text line center positioning*/
+    word-spacing: 5px; /*space between words*/
+    line-height: 2; /*distance between lines*/
+    
+    /*text-decoration: underline;
+    text-decoration-color: black; /*underline color*/
+    /*text-decoration-line: line-through;/*to cut the text like del*/ 
+    text-indent: 120px; /*to move starting point of word*/
+    text-shadow: 3px 5px 2px rgba(13, 53, 93, 0.5); /*x=3px and y=5px blur = 2px*/
+    text-transform: uppercase;    
+}
+
+/*margin[outer]*/
+.margin{
+    height: 500px;
+    width: 500px;
+    border: 10px solid slateblue;
+    margin: 100px 50px 30px 20px; /*clockwise starts from TOP, Right, Bottom, Left*/
+}
+
+/*padding[inner]*/
+.padding{
+    height: 400px;
+    width: 400px;
+    border: 5px solid rgb(45, 151, 80);
+    padding: 50px 60px 20px 50px; /*clockwise starts from TOP, Right, Bottom, Left*/
+}
+
+/*change the img height width. since img is a tag. therefore no class(.) and no id(#)*/
+img{
+    height: 300px;
+    width: 400px;
+}
+

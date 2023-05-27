@@ -1,0 +1,94 @@
+
+
+
+.navbar {
+    
+    background-color: #204478;
+}
+
+.nav-link{
+    color: #afc5bb;
+    font-size: 20px;
+
+}
+
+.form-control {
+   
+    padding: 6px 36px;
+    margin: 0px 0px 2px 0;
+    
+}
+
+.btn {text-align: left;}
+.dropdown-menu{
+    background-color: #5ba1b9;
+    font-size: 15px;
+  
+}
+/*carousel image customization*/
+.carousel-img {
+    height: 500px;
+    width: 100%;
+}
+#carousel-header {
+    font-size: 63px;
+    font-weight: 800;
+    color: #ffffffe0;
+    font-family: cursive;
+    margin-top: -99px;
+    margin-bottom: 1.5rem;
+    line-height: 1.2;
+}
+#carousel-para {
+    font-size: 21px;
+    color: #dbdae7;
+}
+
+.carousel-caption {
+    position: absolute;
+    right: 63%;
+    top: 7.25rem;
+    left: 17%;
+    padding-top: 5.25re;
+    padding-bottom: 1.25re;
+    text-align: center;
+}
+
+
+/*image customization*/
+.cimag{
+    height: 600px;
+    width: 400px
+}
+
+
+
+/*card button customization using inspect */
+.btn {
+    --bs-btn-padding-x: 3.75rem;
+    --bs-btn-padding-y: 0.375rem;}
+
+.margin-bottom{
+    margin-bottom: 15px;
+}
+
+.cimg {
+    height: 144px;
+    width: 318px;
+}
+.tmimg {
+    height: 200px;
+    width: 500px;
+}
+
+.upper-footer{
+    background-color: #204478;
+    padding: 2px;
+}
+.mb-4{color: #589aac;}
+
+#bgimg1{
+    height: 600px;
+    width: 318px;
+}
+

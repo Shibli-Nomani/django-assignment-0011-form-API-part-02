@@ -1,0 +1,73 @@
+<!--inherit html common code-->
+{% extends 'common_code/base.html'%}
+{%load static%}
+ <!--inherit start block content-->
+<!--page title-->
+{% block title %}  
+Portfolio
+{% endblock title %}
+
+
+{%block content1%} 
+ 
+
+<!--headline of Attractions-->
+<h2 class="my-5 text-center">Protfolio</h2>
+
+
+<!--buttons-->
+  <div>
+    <a href="{% url 'aboutus' %}" class="btn btn-primary">Home</a>
+    <a href="{% url 'profiles' %}" class="btn btn-secondary">Profile</a>
+    <a href="{% url 'attractions' %}" class="btn btn-success">Attraction</a>
+    <a href="#" class="btn btn-danger">Beware of Frauds</a>
+    <a href="#" class="btn btn-warning">Illigal Items</a>
+    <a href="{% url 'blogs' %}" class="btn btn-info">Info</a>
+    <a href="{% url 'flights' %}" class="btn btn-light">Flights</a>
+    <a href="{% url 'contacts' %}" class="btn btn-dark">Contacts</a>
+  </div>
+
+
+  <!--start spacing-->
+  <div class ="margin-bottom"> </div>
+  <!--end spacing-->
+
+  <label for="basic-url">Drop your destination URL</label>
+  <div class="input-group mb-3">
+    <div class="input-group-prepend">
+      <span class="input-group-text" id="basic-addon3">https://example.com/users/</span>
+    </div>
+  <input type="text" class="form-control" id="basic-url" aria-describedby="basic-addon3">
+  <a class="btn btn-success" href="#"  role="submit">submit</a>
+  </div>
+
+  <!--start spacing-->
+  <div class ="margin-bottom"> </div>
+  <!--end spacing-->
+
+  <!--start spacing-->
+  <div class ="margin-bottom"> </div>
+  <!--end spacing-->
+  <!--buttons-->
+  <div>
+    <a href="{% url 'aboutus' %}" class="btn btn-primary">Home</a>
+    <a href="{% url 'profiles' %}" class="btn btn-secondary">Profile</a>
+    <a href="{% url 'attractions' %}" class="btn btn-success">Attraction</a>
+    <a href="#" class="btn btn-danger">Beware of Frauds</a>
+    <a href="#" class="btn btn-warning">Illigal Items</a>
+    <a href="{% url 'blogs' %}" class="btn btn-info">Info</a>
+    <a href="{% url 'flights' %}" class="btn btn-light">Flights</a>
+    <a href="{% url 'contacts' %}" class="btn btn-dark">Contacts</a>
+  </div>
+
+  <!--start spacing-->
+  <div class ="margin-bottom"> </div>
+  <!--end spacing-->
+  <!--buttons-->
+{%endblock content1%}
+
+
+
+
+
+ <!--end block content-->

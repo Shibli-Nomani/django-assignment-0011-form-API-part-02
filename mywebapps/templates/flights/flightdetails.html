@@ -1,0 +1,123 @@
+<!--inherit html common code-->
+
+{% extends 'common_code/base.html'%}
+
+{%load static%}
+
+ <!--inherit start block content-->
+<!--page title-->
+{% block title %}  
+Flights 
+{% endblock title %}
+
+{%block content1%} 
+<!--start spacing-->
+<div class ="margin-bottom">
+  
+</div>
+
+<!--start card-->
+    <div class="container">
+    <div class="card bg-dark text-white">
+        <img class="airport-img" src="{% static 'images/airport.jpg'%}" alt="Card image">
+        <div class="card-img-overlay">
+          <h3 class="air-banner-text">Let's Fly with us</h3>
+          <p class="air-banner-text">We are here to serve you the best</p>
+          <p class="air-banner-text">Last updated 3 mins ago</p>
+        </div>
+      </div>
+    </div>
+<!--start card-->
+
+<!--headline -->
+<h2 class="my-5 text-center">Flight Booking</h2>
+
+  
+
+  <!--start form-->
+  <!--start grid-->
+
+
+<div class="container text-center">
+    <div class="row">
+        <form>
+            
+            <div class="row">
+                <div class="col col-md-4">
+                  <input type="text" class="form-control" placeholder="First name">
+                </div>
+                <div class="col col-md-2">
+                  <input type="text" class="form-control" placeholder="Last name">
+                </div>
+              </div>
+            <div class="form-row">
+              <div class="form-group col-md-4">
+                <label for="inputEmail4">Email</label>
+                <input type="email" class="form-control" id="inputEmail4" placeholder="Email">
+              </div>
+              <div class="form-group col-md-4">
+                <label for="inputPassword4">Password</label>
+                <input type="password" class="form-control" id="inputPassword4" placeholder="Password">
+              </div>
+            </div>
+            <div class="dept-arv-group">
+                <label for="Departure">Departure Date:</label>
+                <input type="date" id="Departure-Date" name="Departure Date">
+                
+            </div>
+            <div class="dept-arv-group">
+                <label for="Arrival">Arrival Date:</label>
+                <input type="date" id="Arrival-Date" name="Arrival Date">
+                
+            </div>
+            <div class="form-row">
+              <div class="form-group col-md-4">
+                <label for="inputCity">City</label>
+                <input type="text" class="form-control" id="inputCity">
+              </div>
+              <div class="form-group col-md-4">
+                <label for="inputState">State</label>
+                <select id="inputState" class="form-control">
+                  <option selected>Choose...</option>
+                  <option>...</option>
+                </select>
+              </div>
+              <div class="form-group col-md-2">
+                <label for="inputZip">Zip</label>
+                <input type="text" class="form-control" id="inputZip">
+              </div>
+            </div>
+            <div class="form-group">
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="gridCheck">
+                <label class="form-check-label" for="gridCheck">
+                  Check me out
+                </label>
+              </div>
+            </div>
+            <button type="submit" class="btn btn-primary">submit</button>
+          </form>
+        
+        
+    </div>
+</div>
+  
+
+
+
+
+
+<!--start spacing-->
+<div class ="margin-bottom">
+  
+</div>
+<!--end spacing-->
+
+
+{%endblock content1%}
+
+
+
+
+
+ <!--end block content-->

@@ -1,0 +1,40 @@
+
+<!--inherit html common code-->
+
+{% extends 'common_code/base.html'%}
+
+{%load static%}
+{% block css2 %}<link rel="stylesheet" href="{% static 'css/forms.css' %}">{% endblock css2 %}
+
+<title>{% block title %} Agent Form {% endblock title %}</title>
+
+<!--start block content-->
+
+{%block content1%} 
+
+<h2 style="text-align: center">==============Agent Forms==============</h2>
+ 
+<!--call dictionary key from views.py-->
+<!--call form tag manualy-->
+<!--to avoid error "please fill out this field", use novalidate-->
+<!--"POST will hide the details from url while submitting. By default, it remain as GET "-->
+<form action =" " method="post"  novalidate > 
+
+    <!--to execute post-->
+    {% csrf_token %} 
+
+
+<table>{{agents}}</table>
+    {{form.as_p}}
+
+
+
+<input class="btn btn-success" type = "submit" value = "submit">
+
+</form>
+
+<!--start spacing-->
+<div class ="margin-bottom">
+  
+</div>
+{%endblock content1%}

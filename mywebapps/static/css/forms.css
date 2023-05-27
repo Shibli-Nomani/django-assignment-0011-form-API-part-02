@@ -1,0 +1,64 @@
+form{
+    margin-left: 20px;
+   
+    padding-left: 20px;
+  
+}
+
+.errorlist{
+    
+    color: red;
+    padding-top: 2px;
+}
+
+
+  
+input{
+    border: groove blue;
+    background:rgb(122, 196, 171);
+    border-radius: 10px;
+    border-width: 2px;
+
+    
+    margin-top: 5px;
+    margin-bottom: 5px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-right: 50px;
+    padding-left: 25px;
+
+}
+
+label{
+    color: rgb(16, 16, 63);
+    text-align: justify;
+    padding-right: 50px;
+}
+
+#agent_first_name, #agent_last_name, #agent_email, #agent_acode, #agent_mobile, #agent_password, #agent_re_password, #agent_checkbox, #agent_registration_fee{
+    color: rgb(128, 9, 65);
+}
+#agent_textarea{
+    border: groove blue;
+    background:rgb(122, 196, 171) ;
+    border-radius: 10px;
+    border-width: 2px;
+    color: rgb(128, 9, 65);
+}
+
+#id_textarea{
+    border: groove blue;
+    background:rgb(122, 196, 171) ;
+    border-radius: 10px;
+    border-width: 2px;
+    color: rgb(128, 9, 65);
+}
+
+
+
+#id_agree{
+    border: groove blue;
+    background:rgb(122, 196, 171) ;
+    padding-right: 200px ;
+
+}

@@ -1,0 +1,64 @@
+<!--inherit html common code-->
+{% extends 'common_code/base.html' %}
+
+{% load static %}
+
+<!--page title-->
+{% block title %}  
+profile
+{% endblock title %}
+<!--inherit start block content-->
+{%block content1%} 
+<!--headline of Attractions-->
+<h2 class="my-5 text-center">Profile</h2>
+<!--start grid-->
+<div class="container text-center">
+
+    <div class="row">
+  
+      <!--start card-->
+  
+      <div class="col-6"><div class="card" style="width: 30rem;">
+        <img class = 'profile-img' src="{% static 'images/profile-1.jpg'%}"  alt="...">
+        <div class="card-body">
+          <h5 class="card-title">John Hilton</h5>
+          <p class="font-weight-light">Cheif Executive Officer</p>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          <a class="btn btn-info" href="{% url 'flights' %}"  role="button">more info</a>
+        </div>
+      </div>
+    </div>
+  
+       <!--end card-->
+  
+      <div class="col-6"><div class="card" style="width: 30rem;">
+        <img class = 'profile-img' src="{% static 'images/profile-2.jpg'%}"  alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Joseph Evelton</h5>
+          <p class="font-weight-light">Managing Director</p>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          <a class="btn btn-info" href="{% url 'flights' %}"  role="button">more info</a>
+          
+        </div>
+      </div>
+    </div>
+    <!--end card-->
+</div>
+</div>
+<!--end grid-->
+<!--start spacing-->
+<div class ="margin-bottom">
+  
+</div>
+<!--end spacing-->
+  <!--comapny profile summary-->
+<div class="alert alert-success" role="alert">
+    <h4 class="alert-heading">Summary!</h4>
+    <p>Aww yeah, you successfully read this important alert message. This example text is going to run a bit longer so that you can see how spacing within an alert works with this kind of content.</p>
+    <hr>
+    <p class="mb-0">Whenever you need to, be sure to use margin utilities to keep things nice and tidy.</p>
+    
+    <a class="btn btn-info" href="{% url 'flights' %}"  role="button">more info</a>
+</div>
+
+{%endblock content1%}

@@ -1,0 +1,75 @@
+<!--inherit html common code-->
+
+{% extends 'common_code/base.html'%}
+
+{%load static%}
+
+ <!--inherit start block content-->
+<!--page title-->
+{% block title %}  
+Client Details
+{% endblock title %}
+
+{%block content1%} 
+<!--start spacing-->
+<div class ="margin-bottom">
+  
+</div>
+<!--headline -->
+<h2 class="my-5 text-center">Client Details</h2>
+
+
+<h5 class="my-5 text-center"> Welcome to Database </h5>
+<!--key of dictionary will work as variable in html-->
+<!--client table of SQL using model-->
+{{client}}
+<!--to copy ShIFT + Alt + Down Arrow-->
+
+{% if client %}
+<h1> Student Data </h1>
+<div>
+<table border="3px" align = 'center'>
+    <tr>
+        <th>id</th>
+        <th>client_id</th>
+        <th>client_name</th>
+        <th>client_email</th>
+        <th>batch</th>
+        <th>destination</th>  
+    </tr>
+</div>
+    <!--start run for loop for table data by row-->
+
+    {% for c in client %}
+    <tr> 
+        <td>{{c.id}}</td>
+        <td>{{c.client_id}}</td>
+        <td>{{c.client_name}}</td>
+        <td>{{c.client_email}}</td>
+        <td>{{c.batch}}</td>
+        <td>{{c.destination}}</td>
+    </tr>
+    {% endfor %}
+
+
+    <!--end for loop for table data-->
+</table>
+
+{% else %}
+<h2> Empty Data </h2>
+
+{% endif %}
+<!--start spacing-->
+<div class ="margin-bottom">
+  
+</div>
+<!--end spacing-->
+
+
+{%endblock content1%}
+
+
+
+
+
+ <!--end block content-->
